@@ -1,4 +1,4 @@
-class SpreeVendorsHooks < Spree::ThemeSupport::HookListener
+class SpreeVendorsHooks < Deface::HookListener
   insert_after :admin_product_sub_tabs do
     %(<%= tab :vendors %>)
   end
